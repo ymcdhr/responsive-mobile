@@ -33,7 +33,7 @@ user-scalable：用户是否可以手动缩放。
 
 ![](https://raw.githubusercontent.com/ymcdhr/responsive-mobile/master/imgs%20(5).png)
 
-## 理解物理像素/CSS像素/位图像素
+## 理解物理像素，CSS像素，位图像素
 移动设备有几个概念性的像素需要理解。<br/>
 
 #### 1、物理像素：是指显示屏幕上具体的像素点，比如我们常说的iphone6的屏幕分辨率为：1334*750<br/>
