@@ -1,4 +1,6 @@
 # responsive-mobile
+[移动响应式多屏适配示例页面](https://s3-ap-southeast-1.amazonaws.com/vue201804121500/mobile/index.html)
+
 # 移动端多屏响应式布局方案
 
 [1、理解viewport，meta的设置](#理解viewportmeta的设置)<br/>
