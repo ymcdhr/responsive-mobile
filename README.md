@@ -1,13 +1,13 @@
 # responsive-mobile
 # 移动端多屏响应式布局方案
 
-### [一、理解viewport，meta的设置](#一理解viewportmeta的设置)
-### [二、理解物理像素、CSS像素、位图像素](#二理解物理像素CSS像素位图像素)
-### [三、rem的响应式方案](#三rem的响应式方案)
-### [四、高清屏border的适配](#四高清屏border的适配)
-### [五、完整方案示例](#五完整方案示例)
+### [一、理解viewport，meta的设置](#理解viewportmeta的设置)
+### [二、理解物理像素、CSS像素、位图像素](#理解物理像素CSS像素位图像素)
+### [三、rem的响应式方案](#rem的响应式方案)
+### [四、高清屏border的适配](#高清屏border的适配)
+### [五、完整方案示例](#完整方案示例)
 
-## 一、理解viewport，meta的设置
+## 理解viewport，meta的设置
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
@@ -33,7 +33,7 @@ user-scalable：用户是否可以手动缩放。
 
 ![](https://raw.githubusercontent.com/ymcdhr/responsive-mobile/master/imgs%20(5).png)
 
-## 二、理解物理像素、CSS像素、位图像素
+## 理解物理像素/CSS像素/位图像素
 移动设备有几个概念性的像素需要理解。<br/>
 
 #### 1、物理像素：是指显示屏幕上具体的像素点，比如我们常说的iphone6的屏幕分辨率为：1334*750<br/>
@@ -83,7 +83,7 @@ background-size: 200px 200px; // 或者: background-size: contain;
 width: 400px;
 transform: scale(0.5);
 ```
-## 三、rem的响应式方案
+## rem的响应式方案
 #### REM的定义：
 rem是相对于根元素<html>来设置字体大小的，这样就意味着，我们只需要在根元素确定一个参考值，在根元素中设置多大的字体，这完全可以根据您自己的需求。<br/>
 
@@ -246,7 +246,7 @@ body{font-size:24px;}
 }
 ```
 
-## 四、高清屏border的适配
+## 高清屏border的适配
 1、设计师想要的boder：1px可能是指最小的物理像素，而不一定是最小的css像素。在iphone6这种retina高清屏幕下，dpr为2时最小的物理像素是0.5px。<br/>
 2、然而在dpr为1的手机屏幕上，最小的物理像素是1px。如果在css中也写成0.5px，在ios7以下，android等其他系统里，0.5px会被当成为0px处理。<br/>
 3、所以可以使用scale的方法来缩小比例，但是这样hack实在是不够通用(如：圆角等)，写起来也麻烦。<br/>
@@ -267,7 +267,7 @@ body{font-size:24px;}
 ```
 4、更加通用的办法是在viewport中定义scale<br/>
 
-## 五、完整方案示例
+## 完整方案示例
 #### 以iphone6为例，dpr为2，clientWidth为375px：<br/>
 
 1、使用viewprot，将CSS像素和物理像素保持一致：<br/>
