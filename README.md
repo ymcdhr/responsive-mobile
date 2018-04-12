@@ -1,6 +1,12 @@
 # responsive-mobile
 # 移动端多屏响应式布局方案
 
+### [一、理解viewport，meta的设置](#一理解viewportmeta的设置)
+### [二、理解物理像素、CSS像素、位图像素](#二理解物理像素CSS像素位图像素)
+### [三、rem的响应式方案](#三rem的响应式方案)
+### [四、高清屏border的适配](#四高清屏border的适配)
+### [五、完整方案示例](#五完整方案示例)
+
 ## 一、理解viewport，meta的设置
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
